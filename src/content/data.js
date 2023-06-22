@@ -62,11 +62,4 @@ export const data = [
     date: "2023-22-06",
     type: "image/jpg",
   },
-  {
-    name: "Photo 10",
-    url: "/images/grey.jpg",
-    description: "Photo 10 description",
-    date: "2023-22-06",
-    type: "image/jpg",
-  },
 ];
