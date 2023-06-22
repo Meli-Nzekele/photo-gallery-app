@@ -2,6 +2,7 @@ import { useState } from "react";
 import { data } from "./content/data";
 import Modal from "./modal/modal";
 import Header from "./components/Header";
+import "./App.css";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -17,16 +18,13 @@ function App() {
           data={data}
         />
       )}
-      <div style={styles.main}>
-        <Header
-          title="Photo Gallery"
-          subtitle="A simple photo gallery app built by Melissa Nzekele"
-        />
-        <div style={styles.container}>
+      <div className="main">
+        <Header />
+        <div className="container" id="container">
           {data.map((image_data, index) => {
             return (
               <div
-                style={styles.imageContainer}
+                className="imageContainer"
                 key={index}
                 onClick={() => {
                   setShowModal(true);
@@ -34,12 +32,12 @@ function App() {
                 }}
               >
                 <img
-                  style={styles.image}
+                  className="imageMain"
                   src={image_data.url}
                   alt={image_data.name}
                 />
-                <div style={styles.imageDescription}>
-                  <p style={styles.imageDescriptionText}>{image_data.name}</p>
+                <div className="imageDescription">
+                  <p className="imageDescriptionText">{image_data.name}</p>
                 </div>
               </div>
             );
@@ -49,51 +47,5 @@ function App() {
     </>
   );
 }
-
-const styles = {
-  main: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    width: "100%",
-    height: "100%",
-    backgroundColor: "#f0f0f0",
-    flexDirection: "column",
-  },
-  container: {
-    display: "flex",
-    flexWrap: "wrap",
-    gap: 10,
-    maxWidth: "60vw",
-  },
-  imageContainer: {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    alignContent: "center",
-    cursor: "pointer",
-  },
-  image: {
-    width: "300px",
-    height: "300px",
-    objectFit: "cover",
-  },
-  imageDescription: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    alignContent: "center",
-    width: "100%",
-    height: "50px",
-    backgroundColor: "#000000",
-    opacity: "0.5",
-  },
-  imageDescriptionText: {
-    color: "#ffffff",
-    fontSize: "16px",
-    fontWeight: "bold",
-  },
-};
 
 export default App;
