@@ -6,7 +6,7 @@
 
 To build a photo gallery application. When users scroll through and click on an image, a modal view will pop up in the center of the screen to display other information relating to the photo.
 
-Live demo available at: https://meli-nzekele.github.io/photo-gallery-app/
+Live demo available at: TBC
 
 ## **_Learning objectives_**
 
