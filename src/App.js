@@ -2,6 +2,7 @@ import { useState } from "react";
 import { data } from "./content/data";
 import Modal from "./modal/modal";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
           })}
         </div>
       </div>
+      <Footer />
     </>
   );
 }
