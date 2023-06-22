@@ -1,10 +1,9 @@
 const Modal = ({ data, content, setSelectedContent, setShowModal }) => {
-  const { name, url, description, date, type } = content;
+  const { name, url, description, date, type, credit } = content;
   return (
     <div className="modal">
       <div className="modalContent">
         <div className="modalHeader">
-          <h1 className="modalTitle">{name}</h1>
           <button
             className="modalCloseButton"
             onClick={() => setShowModal(false)}
@@ -12,22 +11,17 @@ const Modal = ({ data, content, setSelectedContent, setShowModal }) => {
             close
           </button>
         </div>
-        <div className="splitContainer">
-          <div className="modalImageContainer">
-            <img className="modalImage" src={url} alt={name} />
-            <p className="modalDescriptionText">{description}</p>
-          </div>
-          <div className="modalDescription">
-            <div className="modalRowData">
-              <p className="modalDescriptionText">Date</p>
-              <p className="modalDescriptionText">{date}</p>
-            </div>
-            <div className="modalRowData">
-              <p className="modalDescriptionText">Type</p>
-              <p className="modalDescriptionText">{type}</p>
-            </div>
-          </div>
+        <h1 className="modalTitle">{name}</h1>
+        <div className="modalImageContainer">
+          <img className="modalImage" src={url} alt={name} />
         </div>
+        <div className="modalDescription">
+          <p className="modalDescriptionCredit">{credit}</p>
+          <p className="modalDescriptionText">{description}</p>
+          <p className="modalDescriptionDetails">Published: {date}</p>
+          <p className="modalDescriptionDetails">Type: {type}</p>
+        </div>
+        <p className="modalImageText">Select an image below</p>
         <div className="modalImagePicker">
           {data.map((image_data, index) => {
             return (
