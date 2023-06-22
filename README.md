@@ -1,3 +1,39 @@
+<img src="https://stackupmvp.cdn.bubble.io/f1634672846390x472202890032379400/Logo.svg" title="StackUp" alt="StackUp" width="200" height="50"/>&nbsp;
+
+# Photo Gallery App - StackUp
+
+## **_Brief description_**
+
+To build a photo gallery application. When users scroll through and click on an image, a modal view will pop up in the center of the screen to display other information relating to the photo.
+
+Live demo available at: https://meli-nzekele.github.io/photo-gallery-app/
+
+## **_Learning objectives_**
+
+- Create a modal view with React
+- Create styling and define inline style properties
+  - _After completing the initial instructions, I moved the css styling to a separate file and added my own_
+- Managing state of an array of data and changing view based on selected item
+
+## **_Development_**
+
+- **Technologies**
+
+  - HTML
+  - CSS
+  - Javascript
+  - React
+  - Version Control (Git)
+
+- **Resources**
+
+- REQUIRED HTML, CSS & JAVASCRIPT provided by https://app.stackup.dev/quest_page/photo-gallery-app
+
+<!-- ## **_Screenshot_** -->
+
+<!-- ![StackUp - Photo Gallery App1](/images/timerscreen1.png)
+![StackUp - Photo Gallery App2](/images/timerscreen2.png) -->
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
