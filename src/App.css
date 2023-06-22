@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Moirai+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Moirai+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 /* App */
 
@@ -24,7 +24,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 50px;
+  margin: 50px;
 }
 
 .imageContainer {
@@ -34,6 +34,7 @@
   align-items: center;
   align-content: center;
   cursor: pointer;
+  margin-top: 50px;
 }
 
 .imageMain {
@@ -120,16 +121,14 @@
 /* Modal */
 
 .modal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
+  overflow-y: scroll;
 }
 
 .modalContent {
@@ -137,41 +136,29 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-content: center;
-  width: 50%;
+  width: 60%;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 20px;
 }
 
-.splitContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 10px;
-}
-
 .modalHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
+  text-align: right;
   width: 100%;
   margin-bottom: 20px;
 }
 
 .modalTitle {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #000000;
-  text-align: left;
+  margin-bottom: 30px;
 }
 
 .modalCloseButton {
   font-size: 1.5rem;
   font-weight: bold;
   color: #000000;
-  text-align: left;
   cursor: pointer;
   border: none;
   background-color: transparent;
@@ -184,6 +171,9 @@
 }
 
 .modalImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 80%;
   height: 80%;
   object-fit: contain;
@@ -192,23 +182,34 @@
 .modalDescription {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  justify-content: center;
 }
 
-.modalRowData {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-  width: 100%;
+.modalDescriptionCredit {
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 .modalDescriptionText {
-  font-size: 1rem;
-  font-weight: bold;
-  color: gray;
-  font-style: italic;
-  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.modalDescriptionDetails {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.6rem;
+  font-weight: 300;
+}
+
+.modalImageText {
+  margin-top: 20px;
+  margin-bottom: -30px;
+  font-size: 0.8rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 .modalImagePicker {
