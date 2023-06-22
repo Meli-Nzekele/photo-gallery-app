@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { data } from "./content/data";
-import Modal from "/modal/Modal";
+import Modal from "./modal/modal";
 import Header from "./components/Header";
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
       <div style={styles.main}>
         <Header
           title="Photo Gallery"
-          subtitle="A simple photo gallery app built by stackup-username"
+          subtitle="A simple photo gallery app built by Melissa Nzekele"
         />
         <div style={styles.container}>
           {data.map((image_data, index) => {
@@ -33,7 +33,11 @@ function App() {
                   setSelectedContent(image_data);
                 }}
               >
-                <img style={styles.image} src={image_data.url} />
+                <img
+                  style={styles.image}
+                  src={image_data.url}
+                  alt={image_data.name}
+                />
                 <div style={styles.imageDescription}>
                   <p style={styles.imageDescriptionText}>{image_data.name}</p>
                 </div>
