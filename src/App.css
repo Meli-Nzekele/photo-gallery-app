@@ -141,7 +141,7 @@
   width: 60%;
   background-color: #ffffff;
   border-radius: 20px;
-  padding: 20px;
+  padding: 50px;
 }
 
 .modalHeader {
@@ -169,7 +169,7 @@
 .modalImageContainer {
   width: 100%;
   height: 50%;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .modalImage {
@@ -179,6 +179,8 @@
   width: 80%;
   height: 80%;
   object-fit: contain;
+  border-radius: 15px;
+  box-shadow: 9px 9px 18px rgba(190, 190, 190, 0.6), -9px -9px 18px #ffffff;
 }
 
 .modalDescription {
@@ -207,7 +209,7 @@
 }
 
 .modalImageText {
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: -30px;
   font-size: 0.8rem;
   font-family: "Roboto", sans-serif;
